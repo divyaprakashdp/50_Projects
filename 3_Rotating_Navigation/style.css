@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 * {
   box-sizing: border-box;
@@ -6,11 +6,91 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
+  background-color: #333;
+  color: #222;
+}
+
+.container{
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container.show-nav{
+  transform: rotate(-20deg);
+}
+
+nav{
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li{
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  /* transform: translateX(-100%); */
+  transition: transform 0.4s ease-in;
+}
+
+.circle-container{
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle{
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  font-size: 26px;
+  color: #fff;
+  border: 0;
+}
+
+.circle button:focus{
+  outline: none;
+}
+
+.cicrcle button#open{
+  left: 60%;
+}
+
+.circle button#close{
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content img{
+  max-width: 100%;
+}
+
+.content{
+  max-width: 1000px;
+  margin: 50px auto;
 }
