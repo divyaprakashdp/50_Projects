@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root{
-  --left-bg-color: rgba(87, 84, 236, 0);
+  --left-bg-color: rgba(87, 84, 236, 0.5);
   --right-bg-color: rgba(43, 43, 43, 0.7);
   --left-btn-hover-color: rgba(87, 84, 236, 1);
   --right-btn-hover-color: rgba(28, 122, 28, 1);
+  --hover-width: 70%;
+  --other-width: 30%;
 }
 
 * {
@@ -21,11 +23,12 @@ body {
 .btn{
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 35%;
   transform: translateX(-50%);
   text-decoration: none;
   color: #fff;
   border: #fff solid 0.15rem;
+  border-radius: 30%;
   font-size: 1rem;
   width: 15rem;
   padding: 1.5rem;
@@ -90,8 +93,36 @@ h1{
   position: absolute;
   font-size: 4rem;
   color: aliceblue;
-  left: 50%;
-  top: 5%;
+  left: 30%;
+  top: 15%;
   transform: translateX(-50%);
   white-space: nowrap;
+}
+
+.hover-left .left:hover{
+  width: var(--hover-width);
+}
+
+.hover-left .right{
+  width: var(--other-width);
+}
+
+.hover-left .right h1{
+  font-size: 2rem;
+
+}
+
+
+.hover-right .right:hover{
+  width: var(--hover-width);
+}
+
+
+.hover-right .left{
+  width: var(--other-width);
+}
+
+.hover-right .left h1{
+  font-size: 2rem;
+
 }
