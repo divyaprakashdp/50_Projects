@@ -17,17 +17,17 @@ body {
 
 .bg{
   background: url('https://media.istockphoto.com/photos/mountian-range-tungnath-chopta-uttrakhand-picture-id1190010920?b=1&k=20&m=1190010920&s=170667a&w=0&h=p122R5UdSQZqNuJ3lD-EnhqMbPGAsxB5vFfELG1Qr_E=');
+  background-size: cover;
   position: absolute;
-  
-  top: 0;
-  left: 0;
+  top: -30px;
+  left: -30px;
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  filter: blur(0px);
+  filter: blur(70px);
 }
 
 .loading-text{
   font-size: 50px;
-  color: #fff;
+  color: rgb(83, 180, 197);
 }
