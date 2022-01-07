@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: beige;
+  background-image: url("https://photojournal.jpl.nasa.gov/jpegMod/PIA14031_modest.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: azure;
+}
+
+h1{
+  align-items: center;
+}
